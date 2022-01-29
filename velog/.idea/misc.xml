@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/GitHub/portfolio_velog/velog/app/src/main/res/layout/activity_main.xml" value="0.21240942028985507" />
+        <entry key="..\:/GitHub/portfolio_velog/velog/app/src/main/res/drawable/eye.xml" value="0.38229166666666664" />
+        <entry key="..\:/GitHub/portfolio_velog/velog/app/src/main/res/font/nanumsquare.xml" value="0.14916666666666667" />
+        <entry key="..\:/GitHub/portfolio_velog/velog/app/src/main/res/layout-v28/weight_baseline.xml" value="0.1" />
+        <entry key="..\:/GitHub/portfolio_velog/velog/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/GitHub/portfolio_velog/velog/app/src/main/res/layout/barrier.xml" value="0.25" />
+        <entry key="..\:/GitHub/portfolio_velog/velog/app/src/main/res/layout/text_input_layout.xml" value="0.1" />
+        <entry key="..\:/GitHub/portfolio_velog/velog/app/src/main/res/layout/weight_baseline.xml" value="0.25" />
       </map>
     </option>
   </component>
