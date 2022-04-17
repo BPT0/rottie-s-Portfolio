@@ -5,12 +5,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!--1. 이미지 파일에 셀렉터를 정의한다
+    * 셀렉터에서 padding을 정의하면 기본 패딩값이 사라지게 된다
+    2. 정의된 셀렉터를 적용한다-->
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="190dp"
-        tools:layout_editor_absoluteY="42dp" />
+        android:text="Button"/>
 
 </LinearLayout>
