@@ -2,10 +2,11 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    tools:context=".main">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -64,8 +65,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="동해물과 "
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/tv2"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="packed" />
 
@@ -74,8 +75,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="마르고 닳도록"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv1" />
 
         <androidx.constraintlayout.widget.Barrier
@@ -83,7 +84,8 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             app:barrierDirection="right"
-            app:constraint_referenced_ids="tv1,tv2" />
+            app:constraint_referenced_ids="tv1,tv2"
+            tools:layout_editor_absoluteX="82dp" />
 
         <Button
             android:id="@+id/btn1"
