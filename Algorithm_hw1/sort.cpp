@@ -6,7 +6,7 @@ void insertionSort(int list[], int n, int& comp);
 inline void swap(int& x, int& y);
 void selectionSort(int list[], int n, int& comp);
 
-int main() {
+int main2() {
 	int list[4], list_len= sizeof list / sizeof(int);
 	int comp = 0;
 	cout << "배열 값 입력 : ";
