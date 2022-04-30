@@ -1,89 +1,103 @@
-#include<iostream>
+#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
+#include <stdio.h>
+#include <string.h>
 using namespace std;
-// void SWAP(int& x, int& y, int temp);
-void print_list(int* list, int size);
 
-void print_list(int* list, int size)
-{
-	for (int i = 1; i < size; i++) {
-		cout << list[i] << ' ';
-	}
-	cout << endl;
+void swap(int* data, int a, int b) {
+    int temp = data[a];
+    data[a] = data[b];
+    data[b] = temp;
 }
 
-//inline void SWAP(int* x, int& y, int temp) {
-//	temp = x;
-//	x = y;
-//	y = temp;
-//}
+void upSortHeap(int* data, int child, int n) {
+    int temp = data[child];
 
-class PQ
-{
-private:
-	int* a;
-	int N;
-public:
-	PQ(int max)
-	{
-		a = new int[max]; N = 0;
-	}
-	~PQ()
-	{
-		delete a;
-	}
+    while (data[child / 2] <= temp) {
+        swap(data, child / 2, child);
+        child /= 2;
+    }
+}
 
-	void upheap(int k)
-	{
-		int v;
-		v = a[k]; a[0] = INT_MAX;
-		while (a[k / 2] <= v)
-		{
-			a[k] = a[k / 2]; k = k / 2;
-		}
-		a[k] = v;
-	}
+void downSortHeap(int* data, int root, int n) {
+    int temp = data[root];
+    int child = root * 2;
+    while (root <= n / 2) {
+        if (child < n && data[child] < data[child + 1])
+            child++;
+        if (temp >= data[child])
+            break;
+        swap(data, root, child);
+        root = child;
+        child *= 2;
+    }
+}
 
-	void insert(int v)
-	{
-		a[++N] = v; 
-		upheap(N);
-	}
-	int remove()
-	{
-		int j, max = 1;
-		for (j = 2; j <= N; j++)
-			if (a[j] > a[max]) max = j;
-		// SWAP(a, max, N);
-		return a[N--];
-	}
-};
+void remove(int* data, int n) {
+    int num = data[1];
+    data[1] = data[n--];
+    downSortHeap(data, 1, n);
+    cout << num << ' ';
+}
 
+void upHeap(int* data, int n) {
+    int heap[100];
+    heap[0] = 100;
 
-void heapsort(int a[], int N)
-{
-	int i; PQ heap(N);
-	for (i = 1; i <= N; i++) heap.insert(a[i]);   // N * insert() //
-	cout << "하햫식 heap:";
-	print_list(a, 10);
+    for (int i = 1; i <= n; i++) {
+        heap[i] = data[i - 1];
+    }
 
-	cout << "상햫식 heap:";
-	for (i = N; i >= 1; i--) a[i] = heap.remove();   // N * remove() //
+    for (int i = n / 2; i >= 1; i--) {
+        downSortHeap(heap, i, n);
+    }
+
+    cout << "상향식 heap정렬 후 : ";
+    for (int i = 1; i <= n; i++)
+        cout << heap[i] << ' ';
+    cout << '\n';
+
+    cout << "정렬 후 결과 : ";
+    for (int i = n; i >= 1; i--) {
+        remove(heap, i);
+    }
+    cout << '\n';
+}
+
+void downHeap(int* data, int n) {
+    int heap[100];
+    heap[0] = 100;
+
+    for (int i = 1; i <= n; i++) {
+        heap[i] = data[i - 1];
+        if (i >= 2) {
+            upSortHeap(heap, i, i);
+        }
+    }
+
+    cout << "하향식 heap정렬 후:";
+    for (int i = 1; i <= n; i++)
+        cout << heap[i] << ' ';
+    cout << '\n';
+
+    cout << "정렬 후 결과:";
+    for (int i = n; i >= 1; i--) {
+        remove(heap, i);
+    }
+    cout << '\n';
 }
 
 int main() {
-	int size = 10;
-	/*cout << "list의 크기를 입력하세요: ";
-	cin >> size;
-	int* list = new int[size];
-	cout << "list[" << size << "]의 data를 입력하세요 :";
-	for (int i = 0; i < size; i++)
-		cin >> list[i];*/
+    char str[100], * s;
+    int num[100], cnt = 0;
 
-	int list[] = {NULL,4,6,1,7,8,9,2,3,5,2};
+    cout << "정렬할 값을 입력(100개이하):";
+    gets_s(str);
 
-	heapsort(list, 10);
+    for (s = strtok(str, " "); s; s = strtok(NULL, " "), cnt++)
+        if (sscanf(s, "%d", &num[cnt]) < 1)
+            break;
 
-	print_list(list, size);
-
-	return 0;
+    upHeap(num, cnt);
+    downHeap(num, cnt);
 }

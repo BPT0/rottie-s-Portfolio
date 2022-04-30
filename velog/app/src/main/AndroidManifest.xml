@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Velog">
         <activity
+            android:name=".ShareedPreferenceActivity"
+            android:exported="false" />
+        <activity
             android:name=".TestActivity"
             android:exported="false" />
         <activity
@@ -23,7 +26,7 @@
         </activity>
         <activity
             android:name=".main"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

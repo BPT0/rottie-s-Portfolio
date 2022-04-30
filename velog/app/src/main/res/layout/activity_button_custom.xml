@@ -3,15 +3,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center">
 
+    <!--theme.xml에서 기본 텍스트크기를 30dp로 설정함-->
     <!--1. 이미지 파일에 셀렉터를 정의한다
     * 셀렉터에서 padding을 정의하면 기본 패딩값이 사라지게 된다
     2. 정의된 셀렉터를 적용한다-->
-    <Button
-        android:id="@+id/button"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="기본패딩 제거 전"/>
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/button"
+        android:background="@drawable/rb_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
         android:text="Button"/>
+
+    <RadioGroup
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <RadioButton
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rb_back"
+            android:text="1번"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2번"
+            android:background="@drawable/rb_back"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rb_back"
+            android:text="3번"/>
+    </RadioGroup>
 
 </LinearLayout>

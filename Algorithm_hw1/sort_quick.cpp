@@ -33,7 +33,7 @@ int Partition(int* list, int left, int right)
 
 void QuickSort(int* list, int left, int right, int& size)
 {
-	// *list가 left값이 right보다 크면 파티션 진행 안됨
+	// list[]가 left값이 right보다 크면 파티션 진행 안됨
 	if (left < right) {
 		int mid = Partition(list, left, right);
 		print_list(list, size);
@@ -52,7 +52,7 @@ void print_list(int* list, int size)
 	cout << endl;
 }
 
-int main3() {
+int main() {
 	int size = 10;
 	cout << "list의 크기를 입력하세요: ";
 	cin >> size;
@@ -64,7 +64,6 @@ int main3() {
 	QuickSort(list, 0, size-1, size);
 	
 	print_list(list, size);
-	
 
 	return 0;
 }
