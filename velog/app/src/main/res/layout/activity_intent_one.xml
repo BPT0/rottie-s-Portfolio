@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Intent_one">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="암시적 인텐트"
+        android:gravity="center"
+        android:background="@color/purple_200"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="명시적 인텐트1"
+        android:gravity="center"
+        android:background="@color/purple_200"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="명시적 인텐트 + data"
+        android:gravity="center"
+        android:background="@color/purple_200"/>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="명시적 인텐트 + result"
+        android:gravity="center"
+        android:background="@color/purple_200"/>
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="명시적 인텐트 + ActivityResult_API"
+        android:gravity="center"
+        android:background="@color/purple_200"/>
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="명시적 인텐트 + Action"
+        android:gravity="center"
+        android:background="@color/purple_200"/>
+
+</LinearLayout>

@@ -39,6 +39,7 @@
                 android:background="@android:color/transparent"
                 android:scaleType="centerInside"
                 android:src="@drawable/visibleeye"/>
+
         </FrameLayout>
 
         <ImageView
@@ -77,5 +78,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/android_picture"/>
+
     </LinearLayout>
 </ScrollView>
