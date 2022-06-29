@@ -51,5 +51,8 @@ dependencies {
 
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
+<<<<<<< HEAD
+>>>>>>> bae4c8829ca78b36864c5d77d2df8c85bddb9175
+=======
 >>>>>>> bae4c8829ca78b36864c5d77d2df8c85bddb9175
 }

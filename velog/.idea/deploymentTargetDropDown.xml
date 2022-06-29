@@ -7,8 +7,9 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-<<<<<<< HEAD
-            <value value="C:\Android_Avd_Graddle\.android\avd\small.avd" />
+=======
+            <value value="C:\Users\user\.android\avd\large.avd" />
+>>>>>>> bae4c8829ca78b36864c5d77d2df8c85bddb9175
 =======
             <value value="C:\Users\user\.android\avd\large.avd" />
 >>>>>>> bae4c8829ca78b36864c5d77d2df8c85bddb9175
@@ -16,8 +17,9 @@
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-<<<<<<< HEAD
-    <timeTargetWasSelectedWithDropDown value="2022-06-24T12:51:07.724466100Z" />
+=======
+    <timeTargetWasSelectedWithDropDown value="2022-05-01T13:08:56.029298900Z" />
+>>>>>>> bae4c8829ca78b36864c5d77d2df8c85bddb9175
 =======
     <timeTargetWasSelectedWithDropDown value="2022-05-01T13:08:56.029298900Z" />
 >>>>>>> bae4c8829ca78b36864c5d77d2df8c85bddb9175

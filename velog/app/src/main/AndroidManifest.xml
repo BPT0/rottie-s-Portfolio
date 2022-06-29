@@ -13,12 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Velog">
         <activity
-<<<<<<< HEAD
-            android:name=".ResourceActivity"
-=======
-            android:name=".Activity_01"
-            android:exported="true" />
-        <activity
             android:name=".ShareedPreferenceActivity"
             android:exported="false" />
         <activity
@@ -26,7 +20,6 @@
             android:exported="false" />
         <activity
             android:name=".RoomActivity"
->>>>>>> bae4c8829ca78b36864c5d77d2df8c85bddb9175
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
