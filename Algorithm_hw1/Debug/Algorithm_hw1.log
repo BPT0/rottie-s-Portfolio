@@ -1,2 +1,8 @@
-﻿  sort_quick.cpp
+﻿  dfs_bfs.cpp
+D:\GitHub\portfolio_velog\Algorithm_hw1\dfs_bfs.cpp(16,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+D:\GitHub\portfolio_velog\Algorithm_hw1\dfs_bfs.cpp(19,20): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+D:\GitHub\portfolio_velog\Algorithm_hw1\dfs_bfs.cpp(40,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+D:\GitHub\portfolio_velog\Algorithm_hw1\dfs_bfs.cpp(43,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+D:\GitHub\portfolio_velog\Algorithm_hw1\dfs_bfs.cpp(77,21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+D:\GitHub\portfolio_velog\Algorithm_hw1\dfs_bfs.cpp(56,6): warning C4101: 'ver' :참조되지 않은 지역 변수입니다.
   Algorithm_hw1.vcxproj -> D:\GitHub\portfolio_velog\Algorithm_hw1\Debug\Algorithm_hw1.exe
