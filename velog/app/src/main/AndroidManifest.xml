@@ -13,6 +13,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Velog">
         <activity
+            android:name=".TablayoutPagerSimpleActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TablayoutPagerNewActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".TablayoutPagerActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".AddViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GlideActivity"
+            android:exported="true" />
+        <activity
             android:name=".ShareedPreferenceActivity"
             android:exported="false" />
         <activity
@@ -20,37 +45,19 @@
             android:exported="false" />
         <activity
             android:name=".RoomActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ApplicationActivity_2"
             android:exported="false" />
         <activity
             android:name=".ApplicationActivity_1"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ThreadActivity"
             android:exported="false" />
         <activity
             android:name=".AsyncActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".FragmentActivity"
             android:exported="true" />
