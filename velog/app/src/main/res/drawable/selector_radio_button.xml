@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_checked="true">
+    <!--상태변화가 있는 효과는 항상 기본효과보다 위에 적용-->
+    <!-- 버튼 클릭 상태 -->
+    <item android:state_pressed="true">
         <shape android:shape="rectangle">
-            <solid android:color="#000000" />
-            <stroke android:width="1dp" android:color="#000000" />
-        </shape> </item>
+            <solid android:color="@color/white"/>
+            <stroke android:width="2dp"
+                android:color="#C7C7C9"/>
+            <corners android:radius="100dp"/>
+            <padding
+                android:top="3dp"
+                android:bottom="3dp"
+                android:left="15dp"
+                android:right="15dp" />
+        </shape>
+    </item>
+    <!-- 버튼 기본 상태 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/purple_200"/>
+            <corners android:radius="100dp"/>
+            <padding
+                android:top="3dp"
+                android:bottom="3dp"
+                android:left="15dp"
+                android:right="15dp" />
+        </shape>
+    </item>
 
-    <item android:state_checked="false">
-        <shape android:shape="rectangle"> <solid android:color="#FFFFFF" />
-            <stroke android:width="1dp" android:color="#000000" />
-        </shape></item>
-
-    <!--<item android:state_checked="true" android:drawable="@drawable/eye" />
-    <item android:state_checked="false" android:drawable="@drawable/invisibleeye" />
--->
 </selector>

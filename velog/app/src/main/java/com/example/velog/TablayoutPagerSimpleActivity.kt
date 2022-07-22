@@ -17,13 +17,8 @@ class TablayoutPagerSimpleActivity : AppCompatActivity() {
         val tabLayout = findViewById<TabLayout>(R.id.tabLayout)
         val viewPager = findViewById<ViewPager>(R.id.viewPager)
 
-        // 탭레이아웃에 탭을 추가
-        tabLayout.addTab(tabLayout.newTab().setText("1번째"))
-        tabLayout.addTab(tabLayout.newTab().setText("2번째"))
-        tabLayout.addTab(tabLayout.newTab().setText("3번째"))
-
         // Pager에 adapter를 장착
-        viewPager.adapter = viewPagerAdapter(LayoutInflater.from(this), 3)
+        viewPager.adapter = viewPagerAdapter(LayoutInflater.from(this), 4)
 
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
             override fun onTabSelected(tab: TabLayout.Tab?) {

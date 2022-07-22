@@ -16,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import org.w3c.dom.Text;
 
-public class Main extends AppCompatActivity {
+class Main extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

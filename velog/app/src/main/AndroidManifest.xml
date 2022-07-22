@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.velog">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".MasterApplication"
         android:allowBackup="true"
@@ -11,18 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Velog">
         <activity
+            android:name=".ButtonCustomActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".TablayoutPagerSimpleActivity"
+            android:exported="true"></activity>
+        <activity
             android:name=".RoomActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-                android:name=".TablayoutPagerSimpleActivity"
-                android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -32,8 +34,7 @@
         </activity>
         <activity
             android:name=".TablayoutPagerActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".AddViewActivity"
             android:exported="true" />
@@ -81,13 +82,8 @@
             android:name=".ViewControl_02"
             android:exported="false" />
         <activity
-            android:name=".ShareedPreferenceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".TestActivity"
-            android:exported="false" />
-        <activity
             android:name=".Activity_01"
             android:exported="true" />
     </application>
+
 </manifest>

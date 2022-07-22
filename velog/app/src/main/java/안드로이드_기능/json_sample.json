@@ -1,0 +1,13 @@
+{
+  "id" : 1,
+  "name" : "홍길동",
+  "is_male" : true,
+  "phone" : null,
+  "key": [
+    1,
+    2,
+    3,
+    4
+  ]
+}
+
