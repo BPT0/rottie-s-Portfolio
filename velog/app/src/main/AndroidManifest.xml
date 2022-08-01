@@ -12,9 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Velog">
-        <activity android:name=".Tinder.LoginActivity"
-            android:exported="true">
-        </activity>
+
         <activity android:name=".Tinder.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -23,7 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Baemin.RetrofitActivity"
             android:exported="true">
