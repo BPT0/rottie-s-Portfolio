@@ -5,6 +5,8 @@ plugins {
 }
 
 apply plugin: 'kotlin-kapt'
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdk 31
@@ -55,4 +57,8 @@ dependencies {
     // 이미지 로드를 위해 글라이드 추가
     implementation 'com.github.bumptech.glide:glide:4.13.2'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
+
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:30.3.1')
+    implementation 'com.google.firebase:firebase-auth-ktx'
 }

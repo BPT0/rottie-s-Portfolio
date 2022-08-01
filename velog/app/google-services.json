@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "531081615338",
+    "firebase_url": "https://fastcamput-tinder-1a94c-default-rtdb.firebaseio.com",
+    "project_id": "fastcamput-tinder-1a94c",
+    "storage_bucket": "fastcamput-tinder-1a94c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531081615338:android:801e6056120b9feeb84493",
+        "android_client_info": {
+          "package_name": "com.example.velog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531081615338-eur6d6iv293sbfbnlski5e84q2hbmud4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxuFNa1oRzb-pAaBJMhC2jwxmzlCTQ4Zc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531081615338-eur6d6iv293sbfbnlski5e84q2hbmud4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
