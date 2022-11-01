@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/HOME"
+        android:title="HOME"
+        android:icon="@drawable/ic_sel_home"
+        android:enabled="true" />
+
+    <item
+        android:id="@+id/light"
+        android:title="Light"
+        android:icon="@drawable/ic_sel_light"
+        android:enabled="true" />
+
+    <item
+        android:id="@+id/heart"
+        android:title="Heart"
+        android:icon="@drawable/ic_sel_heart"
+        android:enabled="true" />
+
+    <item
+        android:id="@+id/posting"
+        android:title="Posting"
+        android:icon="@drawable/ic_sel_posting"
+        android:enabled="true" />
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_sel_profile"
+        android:enabled="true" />
+</menu>
