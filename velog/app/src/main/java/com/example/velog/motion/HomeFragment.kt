@@ -2,10 +2,12 @@ package com.example.velog.motion
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.velog.R
 import com.example.velog.databinding.FragmentMainBinding
 
 class HomeFragment: BaseFragment<FragmentMainBinding>(FragmentMainBinding::inflate) {
@@ -35,6 +37,15 @@ class HomeFragment: BaseFragment<FragmentMainBinding>(FragmentMainBinding::infla
     private fun initRvVideoList(){
         model = ViewModelProvider(this).get(VideoViewModel::class.java)
         model.loadVideoList(page, size)
+
+
+        val adapterSpinner = ArrayAdapter.createFromResource(
+            requireContext(),
+            android.R.array.emailAddressTypes,
+            R.layout.dropdown_menu_popup_item
+        )
+
+        binding.filledExposedDropdown.setAdapter(adapterSpinner)
 
         binding.rvVideo.apply{
             layoutManager = LinearLayoutManager(view?.context, LinearLayoutManager.VERTICAL, false)
